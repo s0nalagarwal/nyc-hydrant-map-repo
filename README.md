@@ -1,6 +1,6 @@
 # NYC Hydrant Density Map
 
-🗺️ **[Live map][(https://s0nalagarwal.github.io/nyc-hydrant-map/)](https://s0nalagarwal.github.io/nyc-hydrant-map-repo/)**
+🗺️ **[Live map](https://s0nalagarwal.github.io/nyc-hydrant-map/)](https://s0nalagarwal.github.io/nyc-hydrant-map-repo/)**
 
 A web map showing NYC fire hydrant density by neighborhood. Built on the modern open-source stack (MapLibre + PMTiles + GitHub Pages).
 
