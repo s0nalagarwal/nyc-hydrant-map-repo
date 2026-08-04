@@ -1,0 +1,20 @@
+# Source data: regenerate from PP2 output.
+data/raw/
+
+# Intermediate file from convert.sh
+*.geojson
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+.vscode/
+.idea/
+*.swp
+
+# Local server logs
+*.log
+
+# Note: hydrant_density.pmtiles IS committed (it's the deliverable).
+# If yours grows beyond ~50 MB, host it externally and add it here.
