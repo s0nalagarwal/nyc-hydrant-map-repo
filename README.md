@@ -4,7 +4,7 @@
 
 A web map showing NYC fire hydrant density by neighborhood. Built on the modern open-source stack (MapLibre + PMTiles + GitHub Pages).
 
-![Screenshot of the choropleth]('/Users/sonal/Documents/Documents - Sonal’s MacBook Pro/GIS_Accelerator/nyc-hydrant-analysis/images/density_choropleth.png')
+![Screenshot of the choropleth](images/web_image.png)
 
 ## The question
 
