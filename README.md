@@ -1,10 +1,10 @@
 # NYC Hydrant Density Map
 
-🗺️ **[Live map](https://s0nalagarwal.github.io/nyc-hydrant-map/)**
+🗺️ **[Live map](https://s0nalagarwal.github.io/nyc-hydrant-map-repo/)**
 
 A web map showing NYC fire hydrant density by neighborhood. Built on the modern open-source stack (MapLibre + PMTiles + GitHub Pages).
 
-![Screenshot of the choropleth](images/density_choropleth.png)
+![Screenshot of the choropleth](images/web_image.png)
 
 ## The question
 
@@ -14,7 +14,7 @@ Where is hydrant coverage densest in NYC, and which neighborhoods are underserve
 
 - **NYC Neighborhoods.** 262 polygons (Source: [NYC Open Data](https://opendata.cityofnewyork.us))
 - **NYC Fire Hydrants.** 109,725 points (Source: [NYC Open Data](https://opendata.cityofnewyork.us))
-- Density was computed in PP2 ([repo link]) using PostGIS and GeoPandas.
+- Density was computed in PP2 ([[repo link]](https://github.com/s0nalagarwal/nyc-hydrant-analysis)) using PostGIS and GeoPandas.
 
 ## The technology choices
 
@@ -30,8 +30,8 @@ Total monthly cost: $0. Total servers running: 0.
 Requires GDAL, tippecanoe, and a tiny local web server.
 
 ```bash
-git clone https://github.com/{s0nalagarwal}/nyc-hydrant-map.git
-cd nyc-hydrant-map
+git clone https://github.com/s0nalagarwal/nyc-hydrant-map-repo.git
+cd nyc-hydrant-map-repo
 
 # Place your PP2 output here:
 #   data/raw/hydrant_density.parquet
@@ -40,13 +40,14 @@ cd nyc-hydrant-map
 ./convert.sh
 
 # Test locally
-python3 -m http.server 8000
+pip install rangehttpserver
+python3 -m RangeHTTPServer 8000
 # open http://localhost:8000
 ```
 
 ## What I learned
 
-Understanding tippecanoe conversions took the most iterations in this project, as multiple times I had errors or bugs in the web page. Either it was the hover aspect not functioning or the neighborhood ID's not correctly displaying which caused issues leading me to rewrite parts of the tippecanoe command. 
+Understanding Tippecanoe conversions took the most iterations in this project, as multiple times I had errors or bugs in the web page. Either it was the hover aspect not functioning or the neighborhood ID's not correctly displaying, which caused issues leading me to rewrite parts of the Tippecanoe command. 
 
 ## Stack
 
